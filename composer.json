@@ -1,0 +1,43 @@
+{
+    "name": "nickcheek/backup",
+    "description": "Backup mysql file",
+    "keywords": [
+        "nickcheek",
+        "backup"
+    ],
+    "homepage": "https://github.com/nickcheek/backup",
+    "license": "MIT",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Nicholas Cheek",
+            "email": "nick@nicholascheek.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^7.1",
+        "lukebaird/dropbox-v2-php-sdk": "^1.1"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^7.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Nickcheek\\Backup\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Nickcheek\\Backup\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit",
+        "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
+
+    },
+    "config": {
+        "sort-packages": true
+    }
+}
