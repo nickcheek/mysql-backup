@@ -67,4 +67,9 @@ class Backup {
         $this->dropbox->files->upload("/DB-Backups/{$this->db}.zip" , $this->path . "{$this->db}.zip");
         unlink($this->path.$this->db.".zip");
     }
+
+    public function test()
+    {
+        return "Connected";
+    }
 }
