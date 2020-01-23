@@ -2,6 +2,8 @@
 
 namespace Nickcheek\Backup;
 
+use Dropbox\Dropbox;
+
 class Backup {
 
     protected $dropbox;
@@ -12,12 +14,12 @@ class Backup {
 
     public function __construct($key)
     {
-        $this->dropbox = new Dropbox\Dropbox($key);
+        $this->dropbox = new Dropbox($key);
     }
 
     public function setUsername($username)
     {
-        $this->user = username;
+        $this->user = $username;
     }
 
     public function setPassword($password)
